@@ -18,7 +18,7 @@ https://elenimar1.github.io/
 - Perfil profissional em QA e testes de software
 - Competências em planejamento, execução e documentação de testes
 - Repositórios públicos em destaque
-- Organização do GitHub para recrutadores e pessoas técnicas
+- Projetos públicos que mostram minha prática em tecnologia
 
 ## Estrutura
 
