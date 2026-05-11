@@ -12,6 +12,7 @@ https://elenimar1.github.io/
 ## Destaques
 
 - Experiência em QA na Field Technology, com estruturação inicial de processo de qualidade
+- Formação QA Engineer pela Mate Academy, com prática em testes manuais, API e automação
 - Mais de 100 casos de teste criados e executados em fluxos críticos
 - 21 bugs identificados e documentados
 - Projetos práticos com Jira, TestRail, Postman, Playwright, Chrome DevTools e DBeaver
@@ -22,6 +23,7 @@ https://elenimar1.github.io/
 ```text
 .
 ├── assets/
+│   ├── qa-course-achievement.png
 │   └── qa-portfolio-hero.png
 ├── github-profile-readme.md
 ├── index.html

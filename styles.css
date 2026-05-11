@@ -244,6 +244,7 @@ a {
 }
 
 .skills-section,
+.education-section,
 .contact-section {
   background: var(--surface);
 }
@@ -329,6 +330,31 @@ a {
   margin: 0;
   padding-left: 20px;
   color: var(--muted);
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.education-copy {
+  display: grid;
+  gap: 22px;
+}
+
+.education-copy p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.education-image {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
 }
 
 .project-type {
@@ -434,6 +460,7 @@ a {
 
 @media (max-width: 980px) {
   .intro-grid,
+  .education-grid,
   .skills-grid,
   .projects-grid,
   .experience-section {
@@ -478,6 +505,7 @@ a {
   }
 
   .intro-grid,
+  .education-grid,
   .skills-grid,
   .projects-grid,
   .experience-section {

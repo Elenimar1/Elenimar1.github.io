@@ -287,6 +287,7 @@ ${tagItems(project.tags)}
       <nav class="nav" aria-label="Navegação principal">
         <a href="#sobre">Sobre</a>
         <a href="#competencias">Competências</a>
+        <a href="#formacao">Formação</a>
         <a href="#experiencia">Experiência</a>
         <a href="#projetos">Projetos</a>
         <a href="#contato">Contato</a>
@@ -350,6 +351,36 @@ ${introParagraphs.join("\n")}
         </div>
         <div class="skills-grid">
 ${skillCards}
+        </div>
+      </section>
+
+      <section class="section education-section" id="formacao" aria-labelledby="formacao-title">
+        <div class="section-heading">
+          <p class="eyebrow">Formação</p>
+          <h2 id="formacao-title">Curso de Engenheiro de QA com IA na Mate Academy</h2>
+        </div>
+        <div class="education-grid">
+          <div class="education-copy">
+            <p>
+              A formação em QA Engineer da Mate Academy foi um marco importante na minha
+              transição para qualidade de software. O curso combina teoria, prática,
+              mentoria e projetos, cobrindo testes manuais, APIs, ferramentas de QA,
+              documentação, automação e preparação para o mercado.
+            </p>
+            <ul class="achievement-list">
+              <li>Curso estruturado em 16 módulos e 108 tópicos, com duração média de 5 meses.</li>
+              <li>Prática em projetos de QA com orientação de mentores e simulação de rotina real.</li>
+              <li>Base aplicada em testes manuais, automação, APIs, Git, SQL, Jira e TestRail.</li>
+            </ul>
+            <a class="text-link" href="https://mate.academy/pt-br/courses/qa-br" target="_blank" rel="noreferrer">
+              Conhecer o curso na Mate Academy
+            </a>
+          </div>
+          <img
+            class="education-image"
+            src="assets/qa-course-achievement.png"
+            alt="Certificado e checklist de QA em uma mesa, representando uma conquista de formação em qualidade de software."
+          >
         </div>
       </section>
 
@@ -452,6 +483,7 @@ https://elenimar1.github.io/
 ## Destaques
 
 - Experiência em QA na Field Technology, com estruturação inicial de processo de qualidade
+- Formação QA Engineer pela Mate Academy, com prática em testes manuais, API e automação
 - Mais de 100 casos de teste criados e executados em fluxos críticos
 - 21 bugs identificados e documentados
 - Projetos práticos com Jira, TestRail, Postman, Playwright, Chrome DevTools e DBeaver
@@ -462,6 +494,7 @@ https://elenimar1.github.io/
 \`\`\`text
 .
 ├── assets/
+│   ├── qa-course-achievement.png
 │   └── qa-portfolio-hero.png
 ├── github-profile-readme.md
 ├── index.html
@@ -497,6 +530,11 @@ do usuário.
 - Testes de API com Postman e validação de payloads JSON
 - Jira, TestRail, Chrome DevTools e DBeaver
 - SQL, HTML, CSS, JavaScript, Git e GitHub
+
+## Formação
+
+- QA Engineer pela [Mate Academy](https://mate.academy/pt-br/courses/qa-br)
+- Formação prática com testes manuais, APIs, automação, ferramentas de QA e projetos
 
 ## Experiência
 

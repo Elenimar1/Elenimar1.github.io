@@ -13,6 +13,11 @@ do usuário.
 - Jira, TestRail, Chrome DevTools e DBeaver
 - SQL, HTML, CSS, JavaScript, Git e GitHub
 
+## Formação
+
+- QA Engineer pela [Mate Academy](https://mate.academy/pt-br/courses/qa-br)
+- Formação prática com testes manuais, APIs, automação, ferramentas de QA e projetos
+
 ## Experiência
 
 **QA Analyst Intern - Field Technology**
