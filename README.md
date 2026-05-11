@@ -32,5 +32,6 @@ https://elenimar1.github.io/
 ## Contato
 
 - E-mail: [elenimar.b.sl@gmail.com](mailto:elenimar.b.sl@gmail.com)
+- WhatsApp: [+55 84 99138 8289](https://wa.me/5584991388289)
 - LinkedIn: [Elenimar Barbosa](https://www.linkedin.com/in/elenimar-barbosa-da-silva-1a239061/)
 - GitHub: [Elenimar1](https://github.com/Elenimar1)
