@@ -243,19 +243,22 @@ a {
   font-weight: 800;
 }
 
-.skills-section {
+.skills-section,
+.contact-section {
   background: var(--surface);
 }
 
 .skills-grid,
-.projects-grid {
+.projects-grid,
+.experience-section {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 18px;
 }
 
 .skill-card,
-.project-card {
+.project-card,
+.experience-card {
   min-height: 260px;
   padding: 24px;
   background: var(--surface);
@@ -280,7 +283,8 @@ a {
 }
 
 .skill-card h3,
-.project-card h3 {
+.project-card h3,
+.experience-card h3 {
   margin: 18px 0 10px;
   font-size: 1.16rem;
   line-height: 1.25;
@@ -288,16 +292,18 @@ a {
 
 .skill-card p,
 .project-card p,
+.experience-card p,
 .contact-panel p {
   margin: 0;
   color: var(--muted);
 }
 
 .projects-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.project-card {
+.project-card,
+.experience-card {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -305,9 +311,24 @@ a {
   background: #fffdf8;
 }
 
-.project-card-muted {
-  border-style: dashed;
-  background: #f2ede4;
+.experience-section {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.experience-section .section-heading {
+  grid-column: 1 / -1;
+}
+
+.secondary-card {
+  background: #f9f7f1;
+}
+
+.achievement-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
 }
 
 .project-type {
@@ -366,6 +387,34 @@ a {
   margin-top: 0;
 }
 
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 12px;
+  color: var(--teal-dark);
+  background: rgba(16, 107, 111, 0.1);
+  border: 1px solid rgba(16, 107, 111, 0.16);
+  border-radius: 8px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.contact-list a:hover,
+.contact-list a:focus-visible {
+  background: rgba(16, 107, 111, 0.16);
+  outline: none;
+}
+
 .site-footer {
   padding: 28px 6vw;
   color: var(--muted);
@@ -379,7 +428,8 @@ a {
 @media (max-width: 980px) {
   .intro-grid,
   .skills-grid,
-  .projects-grid {
+  .projects-grid,
+  .experience-section {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -422,12 +472,14 @@ a {
 
   .intro-grid,
   .skills-grid,
-  .projects-grid {
+  .projects-grid,
+  .experience-section {
     grid-template-columns: 1fr;
   }
 
   .skill-card,
-  .project-card {
+  .project-card,
+  .experience-card {
     min-height: auto;
   }
 
