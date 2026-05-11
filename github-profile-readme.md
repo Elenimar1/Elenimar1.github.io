@@ -16,7 +16,7 @@ do usuário.
 ## Experiência
 
 **QA Analyst Intern - Field Technology**
-Out 2024 - Jan 2025, com extensão até Abr 2025
+Out 2024 – Jan 2026
 
 - Estruturei o processo inicial de QA no sistema FieldPec
 - Criei e executei mais de 100 casos de teste
@@ -28,15 +28,15 @@ Out 2024 - Jan 2025, com extensão até Abr 2025
 
 | Projeto | Foco | Ferramentas |
 | --- | --- | --- |
-| Huntd.tech | Cenários de teste, permissões, filtros, chat e reporte de bugs | Jira, TestRail |
-| Conduit | Testes de API, status codes e fluxo registro-login-artigo | Postman, Playwright |
-| Coffee Cart | Automação de carrinho, promoções, locators e assertions | Playwright |
-| Wizard Bank | Fluxos de usuário e regras de negócio bancárias | Playwright |
+| Huntd.tech | Plataforma web e mobile para recrutamento na área de tecnologia. | TestRail, Jira, Bug report |
+| Conduit | Aplicação para publicação de artigos. | Postman, API REST, Playwright |
+| Coffee Cart | Aplicação de e-commerce simples. | Playwright, UI tests, Assertions |
+| Wizard Bank | Sistema bancário para prática de testes. | Playwright, Fluxos de usuário, Regras de negócio |
 
 ## Contato
 
 - E-mail: [elenimar.b.s@gmail.com](mailto:elenimar.b.s@gmail.com)
 - WhatsApp: [+55 84 99138 8289](https://wa.me/5584991388289)
-- LinkedIn: [Elenimar Barbosa](https://www.linkedin.com/in/elenimar-barbosa-da-silva-1a239061/)
+- LinkedIn: [Elenimar Barbosa](https://www.linkedin.com/in/elenimar-barbosa-da-silva-1a239061/?skipRedirect=true)
 - GitHub: [github.com/Elenimar1](https://github.com/Elenimar1)
 - Portfólio: [elenimar1.github.io](https://elenimar1.github.io/)
