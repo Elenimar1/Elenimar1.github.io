@@ -19,7 +19,7 @@ const PROJECT_TAGS = {
   "Wizard Bank": ["Playwright", "Fluxos de usuário", "Regras de negócio"],
 };
 
-const SITE_VERSION = "v2026.05.13-1";
+const SITE_VERSION = "v2026.05.13-2";
 
 function decodeEntities(value) {
   return value
@@ -194,10 +194,6 @@ function escapeHtml(value) {
     .replace(/"/g, "&quot;");
 }
 
-function gmailComposeUrl(email) {
-  return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
-}
-
 function sentence(value) {
   const cleaned = value.trim();
   if (!cleaned) return "";
@@ -230,7 +226,6 @@ function tagItems(items) {
 }
 
 function renderIndex(cv) {
-  const emailLink = gmailComposeUrl(cv.email);
   const introParagraphs = cv.summary.map(
     (paragraph) => `            <p>\n${wrapParagraph(paragraph)}\n            </p>`,
   );
@@ -318,7 +313,7 @@ ${tagItems(project.tags)}
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#projetos">Ver projetos</a>
-            <a class="button secondary" href="${escapeHtml(emailLink)}" target="_blank" rel="noreferrer">
+            <a class="button secondary" href="mailto:${escapeHtml(cv.email)}">
               Enviar e-mail
             </a>
           </div>
@@ -445,7 +440,7 @@ ${projectCards}
             <span class="email-note">WhatsApp: ${escapeHtml(cv.phone)}</span>
           </p>
           <div class="contact-actions">
-            <a class="button primary" href="${escapeHtml(emailLink)}" target="_blank" rel="noreferrer">
+            <a class="button primary" href="mailto:${escapeHtml(cv.email)}">
               Enviar e-mail
             </a>
             <a class="button secondary" href="${escapeHtml(cv.whatsappUrl)}" target="_blank" rel="noreferrer">
@@ -457,7 +452,7 @@ ${projectCards}
           </div>
         </div>
         <ul class="contact-list">
-          <li><a href="${escapeHtml(emailLink)}" target="_blank" rel="noreferrer">${escapeHtml(cv.email)}</a></li>
+          <li><a href="mailto:${escapeHtml(cv.email)}">${escapeHtml(cv.email)}</a></li>
           <li><a href="${escapeHtml(cv.whatsappUrl)}" target="_blank" rel="noreferrer">WhatsApp</a></li>
           <li><a href="${escapeHtml(cv.github)}" target="_blank" rel="noreferrer">github.com/Elenimar1</a></li>
           <li><a href="${escapeHtml(cv.linkedin)}" target="_blank" rel="noreferrer">LinkedIn</a></li>
@@ -476,8 +471,6 @@ ${projectCards}
 }
 
 function renderReadme(cv) {
-  const emailLink = gmailComposeUrl(cv.email);
-
   return `# ${cv.name} | Portfólio QA
 
 Site pessoal de ${cv.name}, ${cv.title} com experiência em testes manuais,
@@ -513,7 +506,7 @@ https://elenimar1.github.io/
 
 ## Contato
 
-- E-mail: [${cv.email}](${emailLink})
+- E-mail: [${cv.email}](mailto:${cv.email})
 - WhatsApp: [${cv.phone}](${cv.whatsappUrl})
 - LinkedIn: [${cv.name}](${cv.linkedin})
 - GitHub: [Elenimar1](${cv.github})
@@ -521,7 +514,6 @@ https://elenimar1.github.io/
 }
 
 function renderProfileReadme(cv) {
-  const emailLink = gmailComposeUrl(cv.email);
   const projectRows = cv.projects
     .map((project) => `| ${project.name} | ${project.description} | ${project.tags.join(", ")} |`)
     .join("\n");
@@ -565,7 +557,7 @@ ${projectRows}
 
 ## Contato
 
-- E-mail: [${cv.email}](${emailLink})
+- E-mail: [${cv.email}](mailto:${cv.email})
 - WhatsApp: [${cv.phone}](${cv.whatsappUrl})
 - LinkedIn: [${cv.name}](${cv.linkedin})
 - GitHub: [github.com/Elenimar1](${cv.github})
