@@ -19,7 +19,7 @@ const PROJECT_TAGS = {
   "Wizard Bank": ["Playwright", "Fluxos de usuário", "Regras de negócio"],
 };
 
-const SITE_VERSION = "v2026.05.13-2";
+const SITE_VERSION = "v2026.05.13-3";
 
 function decodeEntities(value) {
   return value
@@ -283,7 +283,7 @@ ${tagItems(project.tags)}
     <link rel="preload" href="assets/qa-portfolio-hero.png" as="image">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body data-site-version="${SITE_VERSION}">
     <header class="site-header" aria-label="Cabeçalho">
       <a class="brand" href="#inicio">${escapeHtml(cv.name)}</a>
       <nav class="nav" aria-label="Navegação principal">
@@ -565,6 +565,10 @@ ${projectRows}
 `;
 }
 
+function renderVersion() {
+  return `${JSON.stringify({ version: SITE_VERSION }, null, 2)}\n`;
+}
+
 async function main() {
   const response = await fetch(CV_URL);
   if (!response.ok) {
@@ -582,6 +586,7 @@ async function main() {
     BunCompat.writeFile("index.html", renderIndex(cv)),
     BunCompat.writeFile("README.md", renderReadme(cv)),
     BunCompat.writeFile("github-profile-readme.md", renderProfileReadme(cv)),
+    BunCompat.writeFile("version.json", renderVersion()),
   ]);
 }
 
