@@ -19,7 +19,8 @@ const PROJECT_TAGS = {
   "Wizard Bank": ["Playwright", "Fluxos de usuário", "Regras de negócio"],
 };
 
-const SITE_VERSION = "v2026.05.13-3";
+const SITE_VERSION = "v2026.05.18-1";
+const QA_EXPERIENCE_PERIOD = "Out 2024 – Abr 2025";
 
 function decodeEntities(value) {
   return value
@@ -245,7 +246,7 @@ function renderIndex(cv) {
     )
     .join("\n");
 
-  const qaDate = cv.qaExperience[0] || "Out 2024 - Jan 2025 (extensao ate Abr 2025)";
+  const qaDate = QA_EXPERIENCE_PERIOD;
   const qaBullets = cv.qaExperience.slice(1, 5).map((line) => line.replace(/\.$/, "."));
   const previousDate = cv.previousExperience[0] || "2012 - 2024";
   const previousBullets = cv.previousExperience.slice(1, 4);
@@ -541,7 +542,7 @@ do usuário.
 ## Experiência
 
 **QA Analyst Intern - Field Technology**
-${cv.qaExperience[0] || "Out 2024 - Jan 2025, com extensão até Abr 2025"}
+${QA_EXPERIENCE_PERIOD}
 
 - Estruturei o processo inicial de QA no sistema FieldPec
 - Criei e executei mais de 100 casos de teste

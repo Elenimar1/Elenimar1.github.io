@@ -21,7 +21,7 @@ do usuário.
 ## Experiência
 
 **QA Analyst Intern - Field Technology**
-Out 2024 – Jan 2026
+Out 2024 – Abr 2025
 
 - Estruturei o processo inicial de QA no sistema FieldPec
 - Criei e executei mais de 100 casos de teste
