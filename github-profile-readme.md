@@ -1,6 +1,6 @@
 # Olá, eu sou Elenimar Barbosa
 
-Sou Engenheira QA com experiência em testes manuais, automação, testes de API,
+Sou Junior QA Analyst | Manual Testing | API Testing | Quality Assurance com experiência em testes manuais, automação, testes de API,
 documentação de QA e reporte de bugs. Tenho também um background sólido em vendas e
 suporte ao cliente, o que fortalece minha visão de usabilidade, negócio e experiência
 do usuário.

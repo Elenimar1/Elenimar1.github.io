@@ -1,6 +1,6 @@
 # Elenimar Barbosa | Portfólio QA
 
-Site pessoal de Elenimar Barbosa, Engenheira QA com experiência em testes manuais,
+Site pessoal de Elenimar Barbosa, Junior QA Analyst | Manual Testing | API Testing | Quality Assurance com experiência em testes manuais,
 automação, validação de APIs, documentação de qualidade e reporte estruturado de bugs.
 
 ## Site
